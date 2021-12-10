@@ -22,7 +22,7 @@ const FRAMEWORKS = [
     color: yellow,
     variants: [
       {
-        name: 'strve-js',
+        name: 'strve',
         display: 'JavaScript',
         color: lightYellow
       }
