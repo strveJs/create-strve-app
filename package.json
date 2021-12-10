@@ -1,6 +1,6 @@
 {
   "name": "create-strve-app",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "license": "MIT",
   "author": "maomincoding",
   "bin": {
@@ -17,13 +17,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitejs/vite.git",
-    "directory": "packages/create-vite"
+    "url": "git+https://github.com/maomincoding/create-strve-app.git"
   },
   "bugs": {
-    "url": "https://github.com/vitejs/vite/issues"
+    "url": "https://github.com/maomincoding/create-strve-app/issues"
   },
-  "homepage": "https://github.com/vitejs/vite/tree/main/packages/create-vite#readme",
+  "homepage": "https://github.com/maomincoding/create-strve-app#readme",
   "dependencies": {
     "kolorist": "^1.5.0",
     "minimist": "^1.2.5",

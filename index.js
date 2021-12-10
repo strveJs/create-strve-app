@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-// @ts-check
+// @ts-nocheck
 const fs = require('fs')
 const path = require('path')
 // Avoids autoconversion to number of the project name by defining that the args
@@ -10,11 +10,6 @@ const argv = require('minimist')(process.argv.slice(2), { string: ['_'] })
 const prompts = require('prompts')
 const {
   yellow,
-  green,
-  cyan,
-  blue,
-  magenta,
-  lightRed,
   red,
   lightYellow,
 } = require('kolorist')
