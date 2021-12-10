@@ -1,0 +1,28 @@
+.list {
+    text-align: center;
+}
+
+.list-inner {
+    width: 600px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+.list-inner li {
+    list-style: none;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #C6715B;
+    color: #fff;
+    border-radius: 50px;
+    animation: my1 1s ease-in;
+}
+
+@keyframes my1 {
+    from {
+        opacity: 0.2;
+    }
+    to{
+        opacity: 1;
+    }
+}
