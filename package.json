@@ -1,6 +1,6 @@
 {
   "name": "create-strve-app",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "license": "MIT",
   "author": "maomincoding",
   "bin": {
@@ -12,6 +12,8 @@
     "template-*"
   ],
   "main": "index.js",
+  "private": false,
+  "keywords": ["strve","strvejs","dom","mvvm","virtual dom","html","template","string","create-strve","create-strve-app"],
   "engines": {
     "node": ">=12.0.0"
   },
