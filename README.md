@@ -1,3 +1,4 @@
+
 <p align="center">
   <a href="https://github.com/maomincoding/create-strve-app" target="_blank" rel="noopener noreferrer">
     <img width="180" src="https://maomincoding.github.io/strvejs-doc/logo.png" alt="Strve logo">
