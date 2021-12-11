@@ -1,5 +1,4 @@
 # Create Strve App
-  <a href="https://npmjs.com/package/create-strve-app"><img src="https://badgen.net/npm/v/create-strve-app" alt="npm package"></a>
 
 A set of fast building Strve.js project command line tool.
 
