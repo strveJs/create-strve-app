@@ -28,7 +28,7 @@ pnpm create strve-app
 
 ## Documentation
 
-To learn more about Strve, check [its documentation](https://maomincoding.github.io/strvejs-doc/).
+To learn more about Strve, check [its documentation](https://maomincoding.github.io/strvejs-doc/tool/#create-strve-app).
 
 ## License
 
