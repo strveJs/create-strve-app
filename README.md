@@ -1,16 +1,5 @@
-
-<p align="center">
-  <a href="https://github.com/maomincoding/create-strve-app" target="_blank" rel="noopener noreferrer">
-    <img width="180" src="https://maomincoding.github.io/strvejs-doc/logo.png" alt="Strve logo">
-  </a>
-</p>
-<br/>
-<p align="center">
-  <a href="https://npmjs.com/package/create-strve-app"><img src="https://badgen.net/npm/v/create-strve-app" alt="npm package"></a>
-</p>
-<br/>
-
 # Create Strve App
+  <a href="https://npmjs.com/package/create-strve-app"><img src="https://badgen.net/npm/v/create-strve-app" alt="npm package"></a>
 
 A set of fast building Strve.js project command line tool.
 
