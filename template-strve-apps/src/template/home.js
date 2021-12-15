@@ -1,4 +1,4 @@
-import { render, updateView } from '../strve/index'
+import { render, updateView } from 'strvejs'
 import strveRouter from '../router/index.js'
 
 export const state = {
@@ -9,7 +9,7 @@ function Home() {
     return render`
         <div>
             <button onclick="${goAbout}">goAbout</button>
-            <h1>Home</h1>
+            <h1 onclick="${useChange}">Home1</h1>
             <p>{state.msg}</p>
         </div>
     `
@@ -25,13 +25,10 @@ function goAbout() {
     });
 }
 
-// HMR
-if (import.meta.hot) {
-    import.meta.hot.accept((vs) => {
-        updateView(() => {
-            strveRouter.nextUpdateView(vs.default(),'/');
-        })
-    });
+function useChange(){
+    updateView(()=>{
+        state.msg = 'world';
+    })
 }
 
 export default Home
