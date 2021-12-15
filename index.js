@@ -12,6 +12,7 @@ const {
   yellow,
   red,
   lightYellow,
+  lightGreen
 } = require('kolorist')
 
 const cwd = process.cwd()
@@ -25,6 +26,11 @@ const FRAMEWORKS = [
         name: 'strve',
         display: 'JavaScript',
         color: lightYellow
+      },
+      {
+        name: 'strve-apps',
+        display: 'JavaScript',
+        color: lightGreen
       }
     ]
   }
