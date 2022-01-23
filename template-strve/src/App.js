@@ -1,11 +1,10 @@
 import { render } from 'strvejs';
-import { home, list } from './template/index.js';
+import Home from './template/home';
 
 function template() {
-  return render`
+  return render/*html*/`
         <div class='inner'>
-            ${home()}
-            ${list()}
+            ${Home()}
         </div>
     `;
 }

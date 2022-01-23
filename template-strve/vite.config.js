@@ -3,7 +3,7 @@ import { defineConfig } from 'vite';
 export default defineConfig({
   // options
   server: {
-    port: 3000,
-    hmr: true,
+    strictPort:true,
+    port: 3001
   },
 });

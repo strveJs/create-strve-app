@@ -1,7 +1,7 @@
-import { f1state } from './home.js';
-import { listState } from './list.js';
+import {listState} from '../components/list';
+import {homeState} from '../template/home';
 
-export default {
-  f1state,
-  listState,
-};
+export default{
+    listState,
+    homeState
+}

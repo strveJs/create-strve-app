@@ -13,7 +13,7 @@ const strveRouter = new StrveRouter([{
 }]);
 
 strveRouter.routerHashUpdate(updateView,()=>{
-    console.log('router');
+    console.log('router change');
 });
 
 export default strveRouter

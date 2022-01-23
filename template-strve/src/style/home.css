@@ -1,7 +1,7 @@
 html,body{
     background-color: #333;
 }
-h1,p{
+p{
     color: #C6715B;
 }
 .home {
@@ -10,4 +10,7 @@ h1,p{
 }
 .int{
     margin: 10px 0;
+}
+.list {
+    text-align: center;
 }
