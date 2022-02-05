@@ -11,6 +11,6 @@
     "vite": "^2.5.8"
   },
   "dependencies": {
-    "strvejs": "^2.1.0"
+    "strvejs": "^2.2.0"
   }
 }
