@@ -1,10 +1,10 @@
 import { updateView } from 'strvejs';
-import StrveRouter from 'strve-router';
+import {StrveRouter,routerHashUpdate} from 'strve-router';
 
 import Home from '../template/home';
 import About from '../template/about';
 
-const strveRouter = new StrveRouter([{
+const router = StrveRouter([{
     path: '/',
     template: Home
 }, {
@@ -12,8 +12,8 @@ const strveRouter = new StrveRouter([{
     template: About
 }]);
 
-strveRouter.routerHashUpdate(updateView,()=>{
+routerHashUpdate(updateView,()=>{
     console.log('router change');
 });
 
-export default strveRouter
+export default router

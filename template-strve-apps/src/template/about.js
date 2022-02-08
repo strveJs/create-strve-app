@@ -1,5 +1,5 @@
 import { render,updateView } from 'strvejs'
-import strveRouter from '../router/index.js'
+import {routerLink,param2Obj} from 'strve-router'
 
 function About(){
     return render/*html*/`
@@ -11,13 +11,13 @@ function About(){
 }
 
 function goHome(){
-    strveRouter.routerLink({
+    routerLink({
         path: '/'
     });
 }
 
 function getOption(){
-    console.log(strveRouter.param2Obj());
+    console.log(param2Obj());
 }
 
 export default About

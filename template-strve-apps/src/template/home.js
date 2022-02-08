@@ -1,5 +1,5 @@
 import { render, updateView } from 'strvejs'
-import strveRouter from '../router/index.js'
+import {routerLink} from 'strve-router'
 
 export const state = {
     msg: "hello",
@@ -20,7 +20,7 @@ export default function Home() {
 }
 
 function goAbout() {
-    strveRouter.routerLink({
+    routerLink({
         path: '/about',
         query: {
             id: 1,
