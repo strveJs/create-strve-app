@@ -7,8 +7,7 @@ const prompts = require('prompts')
 const {
   yellow,
   red,
-  lightYellow,
-  lightGreen
+  lightYellow
 } = require('kolorist')
 
 const cwd = process.cwd()
@@ -26,7 +25,7 @@ const FRAMEWORKS = [
       {
         name: 'strve-apps',
         display: 'JavaScript',
-        color: lightGreen
+        color: lightYellow
       }
     ]
   }

@@ -20,7 +20,7 @@ export default function Home() {
         <h1 style=${homeState.h1Style}>Hello Strve.js</h1>
         <div>
             <button onClick=${useAdd}>Add</button>
-            <p>{homeState.obj.a}</p>
+            <p>${homeState.obj.a}</p>
             <input value="${homeState.obj.a}" class="int"/>
         </div>
         <div class='list' onUseGetTit=${useGetTit}>

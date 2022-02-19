@@ -16,7 +16,7 @@ export default function List(v) {
             ${listState.arr.map((item) => render/*html*/`<li>${item}</li>`)}
         </ul>
         <p class="${style.int}">${v}</p>
-        <p>{listState.txt}</p>
+        <p>${listState.txt}</p>
 `;
 }
 
