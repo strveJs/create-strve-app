@@ -1,7 +1,7 @@
 import { render, updateView } from 'strvejs'
 import {routerLink} from 'strve-router'
 
-export const state = {
+const state = {
     msg: "hello",
     arr:[1,2]
 }

@@ -1,16 +1,16 @@
-html,body{
-    background-color: #333;
-}
-p{
+p {
     color: #C6715B;
 }
+
 .home {
     text-align: center;
     margin-top: 60px;
 }
-.int{
+
+.int {
     margin: 10px 0;
 }
+
 .list {
     text-align: center;
 }

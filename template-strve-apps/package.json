@@ -1,6 +1,6 @@
 {
   "name": "strve-apps",
-  "version": "1.2.3",
+  "version": "1.2.4",
   "license": "MIT",
   "scripts": {
     "dev": "vite --open",
@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "strve-router": "^2.0.3",
-    "strvejs": "^2.3.2"
+    "strvejs": "^2.3.3"
   }
 }

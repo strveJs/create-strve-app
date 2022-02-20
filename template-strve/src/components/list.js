@@ -1,7 +1,7 @@
 import { render,updateView,emitEvent } from 'strvejs';
 import style from  '../style/list.module.css';
 
-export const listState = {
+const listState = {
     arr: [1, 2],
     txt:'this is txt.'
   };

@@ -1,7 +1,7 @@
 import { render } from 'strvejs';
 import Home from './template/home';
 
-function template() {
+function App() {
   return render/*html*/`
         <div class='inner'>
             ${Home()}
@@ -9,4 +9,4 @@ function template() {
     `;
 }
 
-export default template;
+export default App;

@@ -3,7 +3,7 @@ import List from '../components/list';
 import '../style/home.css';
 import logo from '../assets/logo.png';
 
-export const homeState = {
+const homeState = {
     obj: {
       a: 1,
     },

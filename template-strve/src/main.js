@@ -1,8 +1,4 @@
 import { Strve } from 'strvejs';
-import template from './App.js';
-import data from './state/index';
+import App from './App.js';
 
-Strve('#app', {
-  data,
-  template,
-});
+Strve('#app', App);
