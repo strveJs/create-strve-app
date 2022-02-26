@@ -11,7 +11,7 @@
     "vite": "^2.5.8"
   },
   "dependencies": {
-    "strve-router": "^2.0.3",
-    "strvejs": "^2.3.3"
+    "strve-router": "^2.0.4",
+    "strvejs": "^2.3.4"
   }
 }
