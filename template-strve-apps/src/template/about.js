@@ -1,23 +1,21 @@
-import { render,updateView } from 'strvejs'
-import {routerLink,param2Obj} from 'strve-router'
+import { h, setData } from 'strvejs';
+import { linkTo, toParse } from 'strve-router';
 
-function About(){
-    return render/*html*/`
-        <div>
-            <button onClick="${goHome}">goHome</button>
-            <h1 onClick=${getOption}>About</h1>
-        </div>
-    `
+export default class About {
+	goHome = () => {
+		linkTo({
+			path: '/',
+		});
+	};
+
+	getOption = () => {
+		console.log(toParse());
+	};
+
+	render = () => {
+		return h/*html*/ `
+            <button onClick="${this.goHome}">goHome</button>
+            <h1 onClick=${this.getOption}>About</h1>
+    `;
+	};
 }
-
-function goHome(){
-    routerLink({
-        path: '/'
-    });
-}
-
-function getOption(){
-    console.log(param2Obj());
-}
-
-export default About

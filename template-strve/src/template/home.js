@@ -1,41 +1,31 @@
-import { render,updateView } from 'strvejs';
+import { h, setData } from 'strvejs';
 import List from '../components/list';
 import '../style/home.css';
 import logo from '../assets/logo.png';
 
 const homeState = {
-    obj: {
-      a: 1,
-    },
-    txt:'txt',
-    h1Style:{
-      color: '#C6715B'
-  }
+	count: 0,
 };
 
 export default function Home() {
-  return render/*html*/`
+	return h/*html*/ `
     <div class='home'>
         <img src=${logo} class='logo'/>
-        <h1 style=${homeState.h1Style}>Hello Strve.js</h1>
+        <h1>Hello Strve.js</h1>
+        <button onClick=${useAdd}>Add</button>
         <div>
-            <button onClick=${useAdd}>Add</button>
-            <p>${homeState.obj.a}</p>
-            <input value="${homeState.obj.a}" class="int"/>
+            <p $key>${homeState.count}</p>
+            <input value="${homeState.count}" class="int" $key/>
         </div>
-        <div class='list' onUseGetTit=${useGetTit}>
-          ${List(homeState.txt)}
-        </div>
+        <component $name="List">
+            ${List()}
+        </component>
     </div>
 `;
 }
 
-function useGetTit(v){
-  console.log(v.detail.tit); // "This is title."
-}
-
 function useAdd() {
-  updateView(() => {
-      homeState.obj.a++;
-  });
+	setData(() => {
+		homeState.count++;
+	});
 }

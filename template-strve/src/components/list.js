@@ -1,46 +1,54 @@
-import { render,updateView,emitEvent } from 'strvejs';
-import style from  '../style/list.module.css';
+import { h, setData } from 'strvejs';
+import style from '../style/list.module.css';
 
 const listState = {
-    arr: [1, 2],
-    txt:'this is txt.'
-  };
+	arr: [1, 2],
+	txt: 'this is txt.',
+};
 
-export default function List(v) {
-  return render/*html*/`
+export default function List() {
+	return h/*html*/ `
         <button onClick=${useUnshift}>Unshift</button>
         <button onClick=${usePush}>Push</button>
         <button onClick=${useDel}>Del</button>
-        <button onClick=${useEmit}>Emit</button>
-        <ul class="${style.listInner}">
-            ${listState.arr.map((item) => render/*html*/`<li>${item}</li>`)}
+        <ul class="${style.listInner}" $key>
+            ${listState.arr.map((item) => h/*html*/ `<li $key>${item}</li>`)}
         </ul>
-        <p class="${style.int}">${v}</p>
-        <p>${listState.txt}</p>
+        <p class="${style.int}" $key>${listState.txt}</p>
 `;
 }
 
 let count = 3;
 function usePush() {
-    updateView(() => {
-      listState.arr.push(count++);
-    });
-}
-function useUnshift(){
-  updateView(() => {
-    listState.arr.unshift(count++);
-  },'useFkey');
-}
-function useDel() {
-    updateView(() => {
-      listState.arr.splice(1, 1);
-    });
+	setData(
+		() => {
+			listState.arr.push(count++);
+		},
+		{
+			name: List,
+		}
+	);
 }
 
-function useEmit(){
-  emitEvent('useGetTit',{
-    detail:{
-      tit:'This is title.'
-    }
-  },'.list')
+function useUnshift() {
+	setData(
+		() => {
+			listState.arr.unshift(count++);
+		},
+		{
+			status: 'useFirstKey',
+			name: List,
+		}
+	);
+}
+
+function useDel() {
+	setData(
+		() => {
+			listState.arr.splice(1, 1);
+		},
+		{
+			name: List,
+		}
+	);
 }

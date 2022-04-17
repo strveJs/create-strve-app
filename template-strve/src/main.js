@@ -1,4 +1,4 @@
-import { Strve } from 'strvejs';
+import { createApp } from 'strvejs';
 import App from './App.js';
 
-Strve('#app', App);
+createApp(App).mount('#app');

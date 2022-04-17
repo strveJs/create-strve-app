@@ -1,10 +1,10 @@
-import { render } from 'strvejs';
+import { h } from 'strvejs';
 import router from './router/index';
 
 export default function App() {
-  return render`
+	return h/*html*/ `
         <div class='inner'>
-          ${router.routerView()}
+          ${router.view()}
         </div>
     `;
 }

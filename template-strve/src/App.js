@@ -1,8 +1,8 @@
-import { render } from 'strvejs';
+import { h } from 'strvejs';
 import Home from './template/home';
 
 function App() {
-  return render/*html*/`
+	return h/*html*/ `
         <div class='inner'>
             ${Home()}
         </div>

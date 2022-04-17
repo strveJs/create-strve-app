@@ -1,37 +1,39 @@
-import { render, updateView } from 'strvejs'
-import {routerLink} from 'strve-router'
+import { h, setData } from 'strvejs';
+import { linkTo } from 'strve-router';
 
-const state = {
-    msg: "hello",
-    arr:[1,2]
-}
+export default class Home {
+	constructor() {
+		this.state = {
+			msg: 'hello',
+			arr: [1, 2],
+		};
+	}
 
-export default function Home() {
-    return render/*html*/`
-        <div>
-            <button onClick="${goAbout}">goAbout</button>
+	goAbout = () => {
+		linkTo({
+			path: '/about',
+			query: {
+				id: 1,
+				name: 'maomin',
+			},
+		});
+	};
+
+	useChange = () => {
+		setData(() => {
+			this.state.msg = 'world';
+			this.state.arr.push(3);
+		});
+	};
+
+	render = () => {
+		return h/*html*/ `
+            <button onClick=${this.goAbout}>goAbout</button>
             <h1>Home</h1>
-            <p onClick="${useChange}">${state.msg}</p>
-            <ul>
-                ${state.arr.map((item) => render/*html*/`<li>${item}</li>`)}
+            <p onClick=${this.useChange} $key>${this.state.msg}</p>
+            <ul $key>
+                ${this.state.arr.map((item) => h/*html*/ `<li>${item}</li>`)}
             </ul>
-        </div>
-    `
-}
-
-function goAbout() {
-    routerLink({
-        path: '/about',
-        query: {
-            id: 1,
-            name: "maomin"
-        }
-    });
-}
-
-function useChange(){
-    updateView(()=>{
-        state.msg = 'world';
-        state.arr.push(3);
-    })
+        `;
+	};
 }
