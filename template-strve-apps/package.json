@@ -12,6 +12,6 @@
   },
   "dependencies": {
     "strve-router": "^2.1.0",
-    "strvejs": "^3.0.1"
+    "strvejs": "^3.1.0"
   }
 }
