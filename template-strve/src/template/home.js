@@ -25,7 +25,12 @@ export default function Home() {
 }
 
 function useAdd() {
-	setData(() => {
-		homeState.count++;
-	});
+	setData(
+		() => {
+			homeState.count++;
+		},
+		{
+			name: Home,
+		}
+	);
 }
