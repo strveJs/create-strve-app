@@ -4,7 +4,9 @@ import Home from './template/home';
 function App() {
 	return h/*html*/ `
         <div class='inner'>
-            ${Home()}
+            <component $name=${Home.name}>
+                ${Home()}
+            </component>
         </div>
     `;
 }
