@@ -17,7 +17,7 @@ export default function Home() {
             <p $key>${homeState.count}</p>
             <input value="${homeState.count}" class="int" $key/>
         </div>
-        <component $name="List">
+        <component $name=${List.name}>
             ${List()}
         </component>
     </div>
