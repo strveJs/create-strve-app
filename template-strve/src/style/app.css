@@ -1,0 +1,16 @@
+p {
+	color: #c6715b;
+}
+
+.app-logo {
+	text-align: center;
+	margin-top: 60px;
+}
+
+.app-tool{
+    width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    border: 1px dotted #c6715b;
+    
+}

@@ -3,18 +3,18 @@ import style from '../style/list.module.css';
 
 const listState = {
 	arr: [1, 2],
-	txt: 'this is txt.',
 };
 
 export default function List() {
 	return h/*html*/ `
-        <button onClick=${useUnshift}>Unshift</button>
-        <button onClick=${usePush}>Push</button>
-        <button onClick=${useDel}>Del</button>
+		<div class="${style.listInner}">
+			<button onClick=${useUnshift}>Unshift</button>
+			<button onClick=${usePush}>Push</button>
+			<button onClick=${useDel}>Del</button>
+		</div>
         <ul class="${style.listInner}" $key>
             ${listState.arr.map((item) => h/*html*/ `<li $key>${item}</li>`)}
         </ul>
-        <p class="${style.int}" $key>${listState.txt}</p>
 `;
 }
 
