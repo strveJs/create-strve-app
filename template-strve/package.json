@@ -1,6 +1,6 @@
 {
   "name": "vite-strve",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "license": "MIT",
   "scripts": {
     "dev": "vite --open",
@@ -11,6 +11,6 @@
     "vite": "^2.9.5"
   },
   "dependencies": {
-    "strvejs": "^3.1.0"
+    "strvejs": "^3.2.0"
   }
 }
