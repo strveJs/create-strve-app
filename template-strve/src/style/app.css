@@ -1,16 +1,21 @@
 p {
 	color: #c6715b;
 }
-
+.inner {
+	text-align: center;
+}
 .app-logo {
+	width: 300px;
+	margin: 0 auto;
 	text-align: center;
 	margin-top: 60px;
 }
-
-.app-tool{
-    width: 400px;
-    margin: 0 auto;
-    padding: 10px;
-    border: 1px dotted #c6715b;
-    
+.logo {
+	width: 100%;
+}
+.app-tool {
+	width: 400px;
+	margin: 0 auto;
+	padding: 10px;
+	border: 1px dotted #c6715b;
 }

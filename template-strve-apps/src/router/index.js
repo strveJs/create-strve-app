@@ -1,4 +1,4 @@
-import { setData } from 'strvejs';
+import { setData } from 'strve-js';
 import { initRouter } from 'strve-router';
 
 import Home from '../template/home';

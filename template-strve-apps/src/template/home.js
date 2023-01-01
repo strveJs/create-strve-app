@@ -1,6 +1,6 @@
-import { h, setData } from 'strvejs';
+import { setData } from 'strve-js';
 import { linkTo } from 'strve-router';
-
+import logo from '../assets/logo.png';
 export default class Home {
 	constructor() {
 		this.state = {
@@ -30,6 +30,9 @@ export default class Home {
 		return h/*html*/ `
             <button onClick=${this.goAbout}>goAbout</button>
             <h1>Home</h1>
+			<div class="logo-inner">
+				<img src="${logo}" class="logo"/>
+			</div>
             <p onClick=${this.useChange} $key>${this.state.msg}</p>
             <ul $key>
                 ${this.state.arr.map((item) => h/*html*/ `<li>${item}</li>`)}

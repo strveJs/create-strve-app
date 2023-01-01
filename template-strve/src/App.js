@@ -1,4 +1,3 @@
-import { h } from 'strvejs';
 import Home from './template/home';
 import List from './components/list';
 import logo from './assets/logo.png';
@@ -9,8 +8,8 @@ function App() {
         <div class='inner'>
             <div class='app-logo'>
                 <img src=${logo} class='logo'/>
-                <h1>Hello Strve.js</h1>
             </div>
+            <h1>Hello Strve.js</h1>
             <div class="app-tool">
                 <component $name=${Home.name}>
                 ${Home()}

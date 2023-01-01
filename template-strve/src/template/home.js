@@ -1,4 +1,4 @@
-import { h, setData } from 'strvejs';
+import { setData } from 'strve-js';
 
 const homeState = {
 	count: 0,

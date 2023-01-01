@@ -1,5 +1,5 @@
-import { h } from 'strvejs';
 import router from './router/index';
+import './styles/app.css';
 
 export default function App() {
 	return h/*html*/ `

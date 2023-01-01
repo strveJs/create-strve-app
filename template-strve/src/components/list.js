@@ -1,4 +1,4 @@
-import { h, setData } from 'strvejs';
+import { setData } from 'strve-js';
 import style from '../style/list.module.css';
 
 const listState = {

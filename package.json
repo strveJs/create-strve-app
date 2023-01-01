@@ -1,33 +1,44 @@
 {
-  "name": "create-strve-app",
-  "version": "2.8.0",
-  "license": "MIT",
-  "author": "maomincoding",
-  "bin": {
-    "create-strve-app": "index.js",
-    "cs-app": "index.js"
-  },
-  "files": [
-    "index.js",
-    "template-*"
-  ],
-  "main": "index.js",
-  "private": false,
-  "keywords": ["strve","strvejs","dom","mvvm","virtual dom","html","template","string","create-strve","create-strve-app"],
-  "engines": {
-    "node": ">=12.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/maomincoding/create-strve-app.git"
-  },
-  "bugs": {
-    "url": "https://github.com/maomincoding/create-strve-app/issues"
-  },
-  "homepage": "https://github.com/maomincoding/create-strve-app#readme",
-  "dependencies": {
-    "kolorist": "^1.5.0",
-    "minimist": "^1.2.5",
-    "prompts": "^2.4.2"
-  }
+	"name": "create-strve-app",
+	"version": "2.9.0",
+	"license": "MIT",
+	"author": "maomincoding",
+	"bin": {
+		"create-strve-app": "index.js",
+		"cs-app": "index.js"
+	},
+	"files": [
+		"index.js",
+		"template-*"
+	],
+	"main": "index.js",
+	"private": false,
+	"keywords": [
+		"strve",
+		"strvejs",
+		"dom",
+		"mvvm",
+		"virtual dom",
+		"html",
+		"template",
+		"string",
+		"create-strve",
+		"create-strve-app"
+	],
+	"engines": {
+		"node": ">=12.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/maomincoding/create-strve-app.git"
+	},
+	"bugs": {
+		"url": "https://github.com/maomincoding/create-strve-app/issues"
+	},
+	"homepage": "https://github.com/maomincoding/create-strve-app#readme",
+	"dependencies": {
+		"kolorist": "^1.5.0",
+		"minimist": "^1.2.5",
+		"prompts": "^2.4.2"
+	}
 }
