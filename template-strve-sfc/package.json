@@ -1,0 +1,14 @@
+{
+	"name": "strve-sfc-template",
+	"description": "Strve single-file component template",
+	"version": "1.0.0",
+	"scripts": {
+		"dev": "vite",
+		"build": "vite build",
+		"preview": "vite preview"
+	},
+	"devDependencies": {
+		"vite": "^4.1.0",
+		"vite-plugin-strve": "^1.3.0"
+	}
+}

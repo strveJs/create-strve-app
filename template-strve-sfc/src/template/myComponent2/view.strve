@@ -1,0 +1,3 @@
+<input type="text" value=${msg} $key="msg" />
+<button @click="myComponent2.btn">change</button>
+<h2 $key>${time}</h2>
