@@ -1,0 +1,4 @@
+<div>home</div>
+<p $key>${count}</p>
+<button @click="home.useAdd">useAdd</button>
+<button @click="home.goAbout">goAbout</button>

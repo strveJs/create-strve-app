@@ -1,0 +1,2 @@
+<div>about</div>
+<button @click="about.goUser">goUser</button>

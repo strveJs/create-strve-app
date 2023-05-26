@@ -1,0 +1,2 @@
+<div $key @click="user.useChange">${msg}</div>
+<button @click="user.goHome">goHome</button>
