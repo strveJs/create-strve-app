@@ -5,7 +5,7 @@ A set of fast building Strve.js project command line tool.
 ## Scaffolding Your First Strve Project
 
 ```bash
-npm init strve-app@latest
+npm init strve-app
 ```
 
 ## Documentation
