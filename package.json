@@ -1,6 +1,6 @@
 {
 	"name": "create-strve-app",
-	"version": "3.3.0",
+	"version": "3.3.3",
 	"license": "MIT",
 	"author": "maomincoding",
 	"bin": {
