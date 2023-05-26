@@ -2,28 +2,10 @@
 
 A set of fast building Strve.js project command line tool.
 
-## Introduce
-
-Create Strve App is a scaffolding tool. Compared with Create Strve, this early scaffolding, Create Strve App is even better. Direct command input can quickly create Strve projects.
-
 ## Scaffolding Your First Strve Project
-
-### npm
 
 ```bash
 npm init strve-app@latest
-```
-
-### yarn
-
-```bash
-yarn create strve-app
-```
-
-### pnpm
-
-```bash
-pnpm create strve-app
 ```
 
 ## Documentation
