@@ -1,0 +1,4 @@
+<fragment>${Tab()}</fragment>
+<h1>Home</h1>
+<p $key>${count}</p>
+<button @click="home.useAdd">Add</button>
