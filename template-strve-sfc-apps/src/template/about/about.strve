@@ -1,2 +1,2 @@
-<div>about</div>
-<button @click="about.goUser">goUser</button>
+<fragment>${Tab()}</fragment>
+<h1>About</h1>

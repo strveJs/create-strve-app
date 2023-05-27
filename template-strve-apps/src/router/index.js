@@ -1,26 +1,21 @@
-import { setData } from "strve-sfc";
-import { initRouter } from "strve-router";
+import { setData } from 'strve-js';
+import { initRouter } from 'strve-router';
 
-import Home from "../template/home/home.js";
-import About from "../template/about/about.js";
-import User from "../template/user/user.js";
+import Home from '../template/home';
+import About from '../template/about';
 
 const router = initRouter(
-  [
-    {
-      path: "/",
-      template: [Home, "render"],
-    },
-    {
-      path: "/about",
-      template: [About, "render"],
-    },
-    {
-      path: "/user",
-      template: [User, "render"],
-    },
-  ],
-  setData
+	[
+		{
+			path: '/',
+			template: [Home, 'render'],
+		},
+		{
+			path: '/about',
+			template: [About, 'render'],
+		},
+	],
+	setData
 );
 
 export default router;

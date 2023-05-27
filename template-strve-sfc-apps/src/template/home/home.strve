@@ -1,4 +1,4 @@
-<div>home</div>
+<fragment>${Tab()}</fragment>
+<h1>Home</h1>
 <p $key>${count}</p>
-<button @click="home.useAdd">useAdd</button>
-<button @click="home.goAbout">goAbout</button>
+<button @click="home.useAdd">Add</button>

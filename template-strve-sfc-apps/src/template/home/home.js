@@ -1,6 +1,6 @@
 import { compilerTemplate, setData, onMounted, onUnmounted } from "strve-sfc";
-import { linkTo } from "strve-router";
 import home from "./home.strve";
+import Tab from "../../components/tab/tab";
 
 function Home() {
   const data = {
@@ -13,20 +13,16 @@ function Home() {
     });
   }
 
-  function goAbout() {
-    linkTo("/about");
-  }
-
   onMounted(() => {
-    console.log(">>> HOME MOUNTED <<<");
+    console.log(">>> Home Mounted <<<");
   });
 
   onUnmounted(() => {
-    console.log(">>> HOME UNMOUNTED <<<");
+    console.log(">>> Home Unmounted <<<");
   });
 
   function render() {
-    return compilerTemplate(home, { ...data, useAdd, goAbout }, "home")();
+    return compilerTemplate(home, { ...data, useAdd, Tab }, "home")();
   }
 
   return {

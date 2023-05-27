@@ -1,22 +1,18 @@
 import { compilerTemplate, onMounted, onUnmounted } from "strve-sfc";
-import { linkTo } from "strve-router";
 import about from "./about.strve";
+import Tab from "../../components/tab/tab";
 
 function About() {
-  function goUser() {
-    linkTo("/user");
-  }
-
   onMounted(() => {
-    console.log(">>> About MOUNTED <<<");
+    console.log(">>> About Mounted <<<");
   });
 
   onUnmounted(() => {
-    console.log(">>> About UNMOUNTED <<<");
+    console.log(">>> About Unmounted <<<");
   });
 
   function render() {
-    return compilerTemplate(about, { goUser }, "about")();
+    return compilerTemplate(about, { Tab }, "about")();
   }
 
   return {

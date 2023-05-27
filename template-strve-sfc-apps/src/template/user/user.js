@@ -1,31 +1,17 @@
-import { compilerTemplate, setData, onMounted, onUnmounted } from "strve-sfc";
-import { linkTo } from "strve-router";
+import { compilerTemplate, onMounted, onUnmounted } from "strve-sfc";
 import user from "./user.strve";
+import Tab from "../../components/tab/tab";
 
 function User() {
-  const data = {
-    msg: "admin",
-  };
-
-  function useChange() {
-    setData(() => {
-      data.msg = "editor";
-    });
-  }
-
-  function goHome() {
-    linkTo("/");
-  }
-
   onMounted(() => {
-    console.log(">>> User MOUNTED <<<");
+    console.log(">>> User Mounted <<<");
   });
   onUnmounted(() => {
-    console.log(">>> User UNMOUNTED <<<");
+    console.log(">>> User Unmounted <<<");
   });
 
   function render() {
-    return compilerTemplate(user, { ...data, useChange, goHome }, "user")();
+    return compilerTemplate(user, { Tab }, "user")();
   }
 
   return {

@@ -1,6 +1,4 @@
-import { createApp, compilerTemplate } from "strve-sfc";
-import "./global.css";
-import App from "./App.strve";
-import router from "./router/index";
+import { createApp } from 'strve-js';
+import App from './App.js';
 
-createApp(compilerTemplate(App, { router }, "app")).mount("#app");
+createApp(App).mount('#app');
