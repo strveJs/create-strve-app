@@ -9,10 +9,10 @@
   },
   "devDependencies": {
     "vite": "^2.9.5",
-    "vite-plugin-strve": "^1.3.0"
+    "vite-plugin-strve": "^1.4.0"
   },
   "dependencies": {
-    "strve-sfc": "^6.0.0",
+    "strve-sfc": "^6.1.0",
     "strve-router": "^2.3.1"
   }
 }
