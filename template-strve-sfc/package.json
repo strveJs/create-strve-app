@@ -12,6 +12,6 @@
     "vite-plugin-strve": "^1.4.0"
   },
   "dependencies": {
-    "strve-sfc": "^6.1.0"
+    "strve-sfc": "^6.1.1"
   }
 }
