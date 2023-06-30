@@ -23,16 +23,6 @@ const FRAMEWORKS = [
         display: "JavaScript",
         color: lightYellow,
       },
-      {
-        name: "strve-sfc",
-        display: "JavaScript",
-        color: lightYellow,
-      },
-      {
-        name: "strve-sfc-apps",
-        display: "JavaScript",
-        color: lightYellow,
-      },
     ],
   },
 ];

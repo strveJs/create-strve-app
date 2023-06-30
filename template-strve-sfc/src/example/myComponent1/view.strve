@@ -1,5 +1,0 @@
-<h2 class="red">c1</h2>
-<h3 $key>${b}</h3>
-<button @click="myComponent1.f">qd</button>
-<my-com2 @eventName="myComponent1.cc" $key="ccc"></my-com2>
-<div>${c2()}</div>
