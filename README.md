@@ -4,8 +4,22 @@ A set of fast building Strve.js project command line tool.
 
 ## Scaffolding Your First Strve Project
 
+**NPM**
+
 ```bash
-npm init strve-app
+npm create strve-app@latest
+```
+
+**Yarn**
+
+```bash
+yarn create strve-app
+```
+
+**PNPM**
+
+```bash
+pnpm create strve-app
 ```
 
 ## Documentation
