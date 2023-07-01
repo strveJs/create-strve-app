@@ -4,7 +4,14 @@ const fs = require("fs");
 const path = require("path");
 const argv = require("minimist")(process.argv.slice(2), { string: ["_"] });
 const prompts = require("prompts");
-const { yellow, red, lightYellow } = require("kolorist");
+const {
+  yellow,
+  red,
+  lightYellow,
+  cyan,
+  magenta,
+  lightGreen,
+} = require("kolorist");
 
 const cwd = process.cwd();
 
@@ -21,7 +28,17 @@ const FRAMEWORKS = [
       {
         name: "strve-apps",
         display: "JavaScript",
-        color: lightYellow,
+        color: magenta,
+      },
+      {
+        name: "strve-jsx",
+        display: "JavaScript",
+        color: cyan,
+      },
+      {
+        name: "strve-jsx-apps",
+        display: "JavaScript",
+        color: lightGreen,
       },
     ],
   },
