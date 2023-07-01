@@ -1,0 +1,27 @@
+.listInner{
+    padding: 0;
+    margin: 0;
+    width: 400px;
+}
+.listInner li {
+	list-style: none;
+    text-align: center;
+    font-weight: bold;
+	padding: 10px;
+	margin: 10px 0;
+	background-color: #c6715b;
+	color: #fff;
+	border-radius: 20px;
+	animation: my1 1s ease-in;
+}
+.listInner button {
+    margin-top: 30px;
+}
+@keyframes my1 {
+	from {
+		opacity: 0.2;
+	}
+	to {
+		opacity: 1;
+	}
+}
