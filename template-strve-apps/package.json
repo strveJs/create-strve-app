@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.7",
-    "babel-plugin-strve": "^1.2.0",
+    "babel-plugin-strve": "^1.4.0",
     "vite": "^2.9.5",
     "vite-plugin-babel": "^1.1.2"
   },
