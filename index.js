@@ -4,7 +4,8 @@ const fs = require("fs");
 const path = require("path");
 const argv = require("minimist")(process.argv.slice(2), { string: ["_"] });
 const prompts = require("prompts");
-const { yellow, red, lightYellow, cyan } = require("kolorist");
+const { yellow, red, lightYellow, cyan, green } = require("kolorist");
+const shell = require('shelljs');
 
 const cwd = process.cwd();
 
@@ -178,21 +179,23 @@ async function init() {
   const pkgInfo = pkgFromUserAgent(process.env.npm_config_user_agent);
   const pkgManager = pkgInfo ? pkgInfo.name : "npm";
 
-  console.log(`\nDone. Now run:\n`);
   if (root !== cwd) {
-    console.log(`  cd ${path.relative(cwd, root)}`);
+    shell.cd(`${path.relative(cwd, root)}`);
   }
   switch (pkgManager) {
     case "yarn":
-      console.log("  yarn");
-      console.log("  yarn dev");
+      console.log(green('starting install...'))
+      shell.exec('  yarn')
+      console.log(green('Install finished.'))
+      shell.exec('  yarn dev')
       break;
     default:
-      console.log(`  ${pkgManager} install`);
-      console.log(`  ${pkgManager} run dev`);
+      console.log(green('starting install...'))
+      shell.exec(`  ${pkgManager} install`)
+      console.log(green('Install finished.'))
+      shell.exec(`  ${pkgManager} run dev`)
       break;
   }
-  console.log();
 }
 
 function copy(src, dest) {
