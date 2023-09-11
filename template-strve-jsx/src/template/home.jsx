@@ -16,11 +16,11 @@ function useAdd() {
 }
 
 const Home = () => (
-  <>
+  <fragment>
     <button onClick={useAdd}>Add</button>
-    <p $key>{homeState.count}</p>
-    <input value={homeState.count} $key />
-  </>
+    <p>{homeState.count}</p>
+    <input value={homeState.count}/>
+  </fragment>
 );
 
 export default Home;

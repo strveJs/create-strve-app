@@ -1,42 +1,46 @@
-import { setData } from 'strve-js';
-import { linkTo } from 'strve-router';
-import logo from '../assets/logo.png';
+import { setData } from "strve-js";
+import { linkTo } from "strve-router";
+import logo from "../assets/logo.png";
 export default class Home {
-	constructor() {
-		this.state = {
-			msg: 'hello',
-			arr: [1, 2],
-		};
-	}
+  constructor() {
+    this.state = {
+      msg: "hello",
+      arr: [1, 2],
+      count: 3,
+    };
+  }
 
-	goAbout = () => {
-		linkTo({
-			path: '/about',
-			query: {
-				id: 1,
-				name: 'maomin',
-			},
-		});
-	};
+  goAbout = () => {
+    linkTo({
+      path: "/about",
+      query: {
+        id: 1,
+        name: "maomin",
+      },
+    });
+  };
 
-	useChange = () => {
-		setData(() => {
-			this.state.msg = 'world';
-			this.state.arr.push(3);
-		});
-	};
+  useChange = () => {
+    setData(() => {
+      this.state.msg = "world";
+      this.state.count++;
+      this.state.arr.unshift(this.state.count);
+    });
+  };
 
-	render = () => {
-		return h/*html*/ `
-            <button onClick=${this.goAbout}>goAbout</button>
-            <h1>Home</h1>
-			<div class="logo-inner">
-				<img src="${logo}" class="logo"/>
-			</div>
-            <p onClick=${this.useChange} $key>${this.state.msg}</p>
-            <ul $key>
-                ${this.state.arr.map((item) => h/*html*/ `<li>${item}</li>`)}
-            </ul>
-        `;
-	};
+  render = () => {
+    return html`
+      <fragment>
+        <button onClick=${this.goAbout}>goAbout</button>
+        <h1>Home</h1>
+        <div class="logo-inner">
+          <img src=${logo} class="logo" />
+        </div>
+        <p onClick=${this.useChange}>${this.state.msg}</p>
+        <ul>
+          ${this.state.arr.map((item) => html`<li key=${item}>${item}</li>`)}
+        </ul>
+      </fragment>
+    `;
+  };
 }

@@ -4,7 +4,7 @@ import logo from "./assets/logo.png";
 import "./style/app.css";
 
 export default () => (
-  <>
+  <fragment>
     <div class="inner">
       <div class="app-logo">
         <img src={logo} class="logo" />
@@ -15,5 +15,5 @@ export default () => (
         <component $name={List.name}>{List()}</component>
       </div>
     </div>
-  </>
+  </fragment>
 );

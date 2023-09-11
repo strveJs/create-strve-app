@@ -6,18 +6,18 @@ const listState = {
 };
 
 const List = () => (
-  <>
+  <fragment>
     <div class={style.listInner}>
       <button onClick={useUnshift}>Unshift</button>
       <button onClick={usePush}>Push</button>
       <button onClick={useDel}>Del</button>
     </div>
-    <ul class={style.listInner} $key>
+    <ul class={style.listInner}>
       {listState.arr.map((item) => (
-        <li $key>{item}</li>
+        <li key={item}>{item}</li>
       ))}
     </ul>
-  </>
+  </fragment>
 );
 
 let count = 3;
@@ -38,7 +38,6 @@ function useUnshift() {
       listState.arr.unshift(count++);
     },
     {
-      status: "useFirstKey",
       name: List,
     }
   );

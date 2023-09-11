@@ -1,6 +1,6 @@
 {
   "name": "create-strve-app",
-  "version": "5.6.2",
+  "version": "5.9.1",
   "license": "MIT",
   "author": "maomincoding",
   "bin": {
@@ -39,7 +39,6 @@
   "dependencies": {
     "kolorist": "^1.5.0",
     "minimist": "^1.2.5",
-    "prompts": "^2.4.2",
-    "shelljs": "^0.8.5"
+    "prompts": "^2.4.2"
   }
 }

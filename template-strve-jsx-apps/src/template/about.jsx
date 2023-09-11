@@ -12,9 +12,9 @@ export default class About {
   };
 
   render = () => (
-    <>
+    <fragment>
       <button onClick={this.goHome}>goHome</button>
       <h1 onClick={this.getOption}>About</h1>
-    </>
+    </fragment>
   );
 }
