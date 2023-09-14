@@ -15,7 +15,7 @@
     "vite-plugin-babel": "^1.1.2"
   },
   "dependencies": {
-    "strve-js": "^6.0.0",
+    "strve-js": "^6.0.1",
     "strve-router": "^4.0.1"
   }
 }
