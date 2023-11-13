@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/maomincoding/create-strve-app.git"
+    "url": "https://github.com/strveJs/create-strve-app"
   },
   "bugs": {
-    "url": "https://github.com/maomincoding/create-strve-app/issues"
+    "url": "https://github.com/strveJs/create-strve-app/issues"
   },
-  "homepage": "https://github.com/maomincoding/create-strve-app#readme",
+  "homepage": "https://github.com/strveJs/create-strve-app#readme",
   "dependencies": {
     "kolorist": "^1.5.0",
     "minimist": "^1.2.5",
