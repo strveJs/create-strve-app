@@ -1,7 +1,7 @@
 import { setData, registerComponent } from 'strve-js';
 import style from '../style/list.module.css';
 
-export const listCom = registerComponent();
+export const listCom = registerComponent('listCom');
 const listState = {
   arr: [1, 2],
 };

@@ -1,6 +1,6 @@
 import { setData, registerComponent } from 'strve-js';
 
-export const homeCom = registerComponent();
+export const homeCom = registerComponent('homeCom');
 
 const homeState = {
   count: 0,
