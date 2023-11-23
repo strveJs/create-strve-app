@@ -1,12 +1,32 @@
-import { setData } from "strve-js";
-import style from "../style/list.module.css";
+import { setData, registerComponent } from 'strve-js';
+import style from '../style/list.module.css';
 
+export const listCom = registerComponent();
 const listState = {
   arr: [1, 2],
 };
 
-export default function List() {
-  return html`
+let count = 3;
+function usePush() {
+  setData(() => {
+    listState.arr.push(count++);
+  }, [listCom, List]);
+}
+
+function useUnshift() {
+  setData(() => {
+    listState.arr.unshift(count++);
+  }, [listCom, List]);
+}
+
+function useDel() {
+  setData(() => {
+    listState.arr.splice(1, 1);
+  }, [listCom, List]);
+}
+
+export const List = () =>
+  html`
     <fragment>
       <div class=${style.listInner}>
         <button onClick=${useUnshift}>Unshift</button>
@@ -18,38 +38,3 @@ export default function List() {
       </ul>
     </fragment>
   `;
-}
-
-let count = 3;
-function usePush() {
-  setData(
-    () => {
-      listState.arr.push(count++);
-    },
-    {
-      name: List,
-    }
-  );
-}
-
-function useUnshift() {
-  setData(
-    () => {
-      listState.arr.unshift(count++);
-    },
-    {
-      name: List,
-    }
-  );
-}
-
-function useDel() {
-  setData(
-    () => {
-      listState.arr.splice(1, 1);
-    },
-    {
-      name: List,
-    }
-  );
-}

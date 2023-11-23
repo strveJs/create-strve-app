@@ -10,10 +10,10 @@
   "devDependencies": {
     "@babel/core": "^7.20.7",
     "babel-plugin-strve": "^2.0.0",
-    "vite": "^2.9.5",
+    "vite": "^2.9.16",
     "vite-plugin-babel": "^1.1.2"
   },
   "dependencies": {
-    "strve-js": "^6.0.2"
+    "strve-js": "^6.1.0"
   }
 }

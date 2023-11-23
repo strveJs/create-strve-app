@@ -1,14 +1,14 @@
 li {
-	list-style: none;
+  list-style: none;
 }
 .inner {
-	text-align: center;
+  text-align: center;
 }
 .logo-inner {
-	width: 300px;
-	margin: 0 auto;
+  width: 150px;
+  margin: 0 auto;
 }
 .logo {
-	width: 100%;
-	text-align: center;
+  width: 100%;
+  text-align: center;
 }
