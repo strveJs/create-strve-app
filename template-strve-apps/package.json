@@ -15,6 +15,6 @@
   },
   "dependencies": {
     "strve-js": "^6.2.0",
-    "strve-router": "^4.1.0"
+    "strve-router": "^4.2.0"
   }
 }

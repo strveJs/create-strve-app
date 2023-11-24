@@ -1,20 +1,22 @@
-import { linkTo, toParse } from "strve-router";
+import { linkTo, toParse } from 'strve-router';
 
-export default class About {
-  goHome = () => {
+export default function about() {
+  let render;
+
+  function goHome() {
     linkTo({
-      path: "/",
+      path: '/',
     });
-  };
+  }
 
-  getOption = () => {
+  function getOption() {
     console.log(toParse());
-  };
+  }
 
-  render = () => (
+  return (render = () => (
     <fragment>
-      <button onClick={this.goHome}>goHome</button>
-      <h1 onClick={this.getOption}>About</h1>
+      <button onClick={goHome}>goHome</button>
+      <h1 onClick={getOption}>About</h1>
     </fragment>
-  );
+  ));
 }

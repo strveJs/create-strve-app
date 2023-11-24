@@ -1,18 +1,18 @@
-import { setData } from "strve-js";
-import { initRouter } from "strve-router";
+import { setData } from 'strve-js';
+import { initRouter } from 'strve-router';
 
-import Home from "../template/home";
-import About from "../template/about";
+import home from '../template/home';
+import about from '../template/about';
 
 const router = initRouter(
   [
     {
-      path: "/",
-      template: [Home, "render"],
+      path: '/',
+      template: home,
     },
     {
-      path: "/about",
-      template: [About, "render"],
+      path: '/about',
+      template: about,
     },
   ],
   setData

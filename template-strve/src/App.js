@@ -11,8 +11,8 @@ function App() {
       </div>
       <h1>Hello Strve.js</h1>
       <div class="app-tool">
-        <component $name=${homeCom}>${Home()}</component>
-        <component $name=${listCom}>${List()}</component>
+        <component $name=${homeCom}>${Home()()}</component>
+        <component $name=${listCom}>${List()()}</component>
       </div>
     </div>
   `;

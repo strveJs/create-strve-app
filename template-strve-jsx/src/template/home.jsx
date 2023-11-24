@@ -2,20 +2,21 @@ import { setData, registerComponent } from 'strve-js';
 
 export const homeCom = registerComponent('homeCom');
 
-const homeState = {
-  count: 0,
-};
+export function Home() {
+  let count = 0;
+  let render;
 
-function useAdd() {
-  setData(() => {
-    homeState.count++;
-  }, [homeCom, Home]);
+  function add() {
+    setData(() => {
+      count++;
+    }, [homeCom, render]);
+  }
+
+  return (render = () => (
+    <fragment>
+      <button onClick={add}>Add</button>
+      <h1>{count}</h1>
+      <input value={count} />
+    </fragment>
+  ));
 }
-
-export const Home = () => (
-  <fragment>
-    <button onClick={useAdd}>Add</button>
-    <p>{homeState.count}</p>
-    <input value={homeState.count} />
-  </fragment>
-);
