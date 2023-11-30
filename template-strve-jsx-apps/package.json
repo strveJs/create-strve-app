@@ -1,6 +1,6 @@
 {
   "name": "template-strve-jsx-apps",
-  "version": "6.2.3",
+  "version": "6.2.5",
   "license": "MIT",
   "scripts": {
     "dev": "vite --open",
@@ -15,7 +15,7 @@
     "vite-plugin-babel": "^1.1.3"
   },
   "dependencies": {
-    "strve-js": "^6.2.0",
+    "strve-js": "^6.2.6",
     "strve-router": "^4.2.0"
   }
 }

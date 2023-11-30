@@ -1,5 +1,5 @@
-import { homeCom, Home } from './template/home';
-import { listCom, List } from './components/list';
+import Home from './template/home';
+import List from './components/list';
 import logo from './assets/logo.png';
 import './style/app.css';
 
@@ -11,8 +11,8 @@ function App() {
       </div>
       <h1>Hello Strve.js</h1>
       <div class="app-tool">
-        <component $name=${homeCom}>${Home()()}</component>
-        <component $name=${listCom}>${List()()}</component>
+        <component $render=${Home} />
+        <component $render=${List} />
       </div>
     </div>
   `;

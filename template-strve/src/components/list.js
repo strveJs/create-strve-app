@@ -1,13 +1,12 @@
 import { setData, registerComponent } from 'strve-js';
 import style from '../style/list.module.css';
 
-export const listCom = registerComponent('listCom');
-export function List() {
+export default function List() {
+  let [listCom, render] = [registerComponent()];
   const listState = {
     arr: [1, 2],
   };
   let count = 3;
-  let render;
 
   function usePush() {
     setData(() => {
@@ -29,7 +28,7 @@ export function List() {
 
   return (render = () =>
     html`
-      <fragment>
+      <fragment $id=${listCom}>
         <div class=${style.listInner}>
           <button onClick=${useUnshift}>Unshift</button>
           <button onClick=${usePush}>Push</button>

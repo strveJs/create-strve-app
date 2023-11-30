@@ -1,10 +1,8 @@
 import { setData, registerComponent } from 'strve-js';
 
-export const homeCom = registerComponent('homeCom');
-
-export function Home() {
+export default function Home() {
+  let [homeCom, render] = [registerComponent()];
   let count = 0;
-  let render;
 
   function add() {
     setData(() => {
@@ -14,7 +12,7 @@ export function Home() {
 
   return (render = () =>
     html`
-      <fragment>
+      <fragment $id=${homeCom}>
         <button onClick=${add}>Add</button>
         <h1>${count}</h1>
         <input value=${count} />
