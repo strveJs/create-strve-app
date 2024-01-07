@@ -1,4 +1,4 @@
-import { setData } from 'strve-js';
+import { resetView } from 'strve-js';
 import { initRouter } from 'strve-router';
 
 import home from '../template/home';
@@ -15,7 +15,7 @@ const router = initRouter(
       template: about,
     },
   ],
-  setData
+  resetView
 );
 
 export default router;

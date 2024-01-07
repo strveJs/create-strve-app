@@ -1,21 +1,22 @@
-import { setData, registerComponent } from 'strve-js';
+import { defineComponent } from 'strve-js';
 
-export default function Home() {
-  let [homeCom, render] = [registerComponent()];
+const Home = defineComponent(({ setData }) => {
   let count = 0;
 
   function add() {
     setData(() => {
       count++;
-    }, [homeCom, render]);
+    });
   }
 
-  return (render = () =>
+  return () =>
     html`
-      <fragment $id=${homeCom}>
+      <fragment>
         <button onClick=${add}>Add</button>
         <h1>${count}</h1>
         <input value=${count} />
       </fragment>
-    `);
-}
+    `;
+});
+
+export default Home;

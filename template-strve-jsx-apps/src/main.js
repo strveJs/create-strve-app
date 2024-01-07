@@ -1,4 +1,12 @@
-import { createApp } from "strve-js";
-import App from "./App";
+import { defineComponent } from 'strve-js';
+import router from './router/index';
+import './styles/app.css';
 
-createApp(App).mount("#app");
+defineComponent(
+    {
+        mount: '#app',
+    },
+    () => {
+        return () => <component $is={router.view()}></component>;
+    }
+);

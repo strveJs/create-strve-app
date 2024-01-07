@@ -1,8 +1,7 @@
-import { setData, registerComponent } from 'strve-js';
+import { defineComponent } from 'strve-js';
 import style from '../style/list.module.css';
 
-export default function List() {
-  let [listCom, render] = [registerComponent()];
+const List = defineComponent(({ setData }) => {
   const listState = {
     arr: [1, 2],
   };
@@ -11,24 +10,24 @@ export default function List() {
   function usePush() {
     setData(() => {
       listState.arr.push(count++);
-    }, [listCom, render]);
+    });
   }
 
   function useUnshift() {
     setData(() => {
       listState.arr.unshift(count++);
-    }, [listCom, render]);
+    });
   }
 
   function useDel() {
     setData(() => {
       listState.arr.splice(1, 1);
-    }, [listCom, render]);
+    });
   }
 
-  return (render = () =>
+  return () =>
     html`
-      <fragment $id=${listCom}>
+      <fragment>
         <div class=${style.listInner}>
           <button onClick=${useUnshift}>Unshift</button>
           <button onClick=${usePush}>Push</button>
@@ -38,5 +37,7 @@ export default function List() {
           ${listState.arr.map((item) => html`<li key=${item}>${item}</li>`)}
         </ul>
       </fragment>
-    `);
-}
+    `;
+});
+
+export default List;
