@@ -1,6 +1,6 @@
 {
   "name": "template-strve-jsx",
-  "version": "6.2.7",
+  "version": "0.0.0",
   "license": "MIT",
   "scripts": {
     "dev": "vite --open",
